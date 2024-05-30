@@ -8,9 +8,7 @@ import {
 } from "../controller/crud.js";
 const router = express.Router();
 router.route("/").get(getAllBooks).post(createNewBook);
-router
-  .route("/:id")
-  .get(getSingleBook)
-  .put(updateBook)
-  .delete(deleteSingleBook);
+router.route("/:id").get(getSingleBook).delete(deleteSingleBook);
+
+router.route("/edit/:id").put(updateBook);
 export default router;
