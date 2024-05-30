@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  border-top-color: #3490dc; /* Tailwind blue */
+  animation: spin 1s linear infinite;
+  margin: 0px auto;
+}
+.down-letters {
+  font-size: 1.3rem;
+}
